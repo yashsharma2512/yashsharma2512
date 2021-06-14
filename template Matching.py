@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 img = cv.imread('rdj.jpg')
 #img = cv.cvtColor(img,cv.COLOR_BGR2RGB)
-face = cv.imread('rdjface.jpg')
+face = cv.imread('alan.jpg')
 #face = cv.cvtColor(face,cv.COLOR_BGR2RGB)
 #methods = ['cv.TM_CCOEFF', 'cv.TM_CCOEFF_NORMED', 'cv.TM_CCORR',
 #'cv.TM_CCORR_NORMED', 'cv.TM_SQDIFF', 'cv.TM_SQDIFF_NORMED']
@@ -27,7 +27,7 @@ face = cv.imread('rdjface.jpg')
 #     cv.destroyAllWindows()
 imcopy = img.copy()
 font = cv.FONT_HERSHEY_SIMPLEX
-method = cv.TM_SQDIFF_NORMED
+method = cv.TM_CCORR_NORMED
 res = cv.matchTemplate(imcopy,face,method)
 if res.all():
     print('FOUND')
