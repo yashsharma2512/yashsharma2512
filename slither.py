@@ -1,4 +1,5 @@
 import turtle
+import freegames as fg
 timothy = turtle.Turtle()
 screen = turtle.getscreen()
 screen.screensize(200,200)
@@ -11,6 +12,8 @@ x = turtle.numinput('NUM','Number')
 y = turtle.numinput('NUM2','Number again')
 anthony.width(x)
 timothy.width(y)
+screen.addshape('car.gif')
+turtle.shape('car.gif')
 def up():
     timothy.forward(100)
 def turn():
