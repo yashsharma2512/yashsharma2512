@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np
 #from numpy.lib.type_check import _imag_dispatcher
 
-image = cv.imread('grid.jpg')
+image = cv.imread('alan.jpg')
 gray= cv.cvtColor(image,cv.COLOR_BGR2GRAY)
 #gray = cv.GaussianBlur(gray,(5,5),1)
 gray = np.float32(gray)
